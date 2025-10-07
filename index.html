@@ -34,19 +34,24 @@
 
     
 
-    .about-img {
+    .about-content {
+  /* ensure container encloses floated element */
+  overflow: auto;  /* or use clear technique */
+}
 
-      float: left;                  /* Pushes image to the left side */
+.about-img {
+  float: left;             /* float image to left */
+  margin: 0 20px 20px 0;   /* right and bottom spacing */
+  max-width: 200px;        /* adjust size as needed */
+  height: auto;             /* maintain aspect ratio */
+  border-radius: 6px;       /* optional styling */
+}
 
-      margin: 0 20px 20px 0;        /* Adds spacing around the image */
+.about-text {
+  /* ensures text container is aware of float, but you often don’t need much here */
+}
+/* optionally clear floats after this section if needed */
 
-      max-width: 200px;             /* Or whatever size fits well */
-
-      height: auto;                 /* Maintain image ratio */
-
-      border-radius: 8px;           /* Optional: rounded corners */
-
-    }
 
 
 
@@ -377,20 +382,10 @@
 
  <section id="#about">
     <h2>About Me</h2>
+    <div class="about-content">
+    <img src="kaiwen-zhang-web.jpg" alt="My Photo" class="about-img">
 
-    <img src="kaiwen-zhang-web.jpg" alt="My Photo" style="
-
-    width: 200px;
-
-    height: 200px;
-
-    object-fit: cover;
-
-    border-radius: 0;
-
-  ">
-
-
+    <div class="about-text">
 
     <p>I am a second year doctoral student in mathematics at the Courant Institute of New York University. I am interested in stochastic analysis, probability, and applications to sampling and ML algorithms. I am also interested in novel solutions (e.g. self-similar analysis) to partial differential equations.</p>
 
@@ -399,7 +394,7 @@
     <p>I received my B.S. in Applied Mathematics at Columbia University School of Engineering (summa cum laude). My favorite Columbia CC books are the Structures of Scientific Revolution, Discourses on Livy, and Leisure, the Basis of Culture. In my free time, I enjoy tennis, volleyball, and classical music.</p>
 
 
-
+    </div>
   </div>
 
 
