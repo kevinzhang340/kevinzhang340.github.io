@@ -1,1 +1,276 @@
-test test test
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Blog - Kaiwen Zhang</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    .about-content {
+  /* ensure container encloses floated element */
+  overflow: auto;  /* or use clear technique */
+}
+
+.about-img {
+  float: left;             /* float image to left */
+  margin: 0 20px 20px 0;   /* right and bottom spacing */
+  max-width: 200px;        /* adjust size as needed */
+  height: auto;             /* maintain aspect ratio */
+  border-radius: 6px;       /* optional styling */
+}
+
+.about-text {
+  /* ensures text container is aware of float, but you often don’t need much here */
+}
+/* optionally clear floats after this section if needed */
+
+
+
+
+    body {
+      
+      margin: 0;
+
+      font-family: 'Inter', sans-serif;
+
+      background-color: #fdfdfd;
+
+      color: #333;
+
+      line-height: 1.6;
+    }
+
+
+
+
+
+
+
+    header {
+
+      background: linear-gradient(to right, #7F7FD5, #86A8E7, #91EAE4);
+
+      color: white;
+
+      padding: 60px 20px;
+
+      text-align: center;
+
+    }
+
+    header h1 {
+
+      margin: 0;
+
+      font-size: 2.5rem;
+
+    }
+
+
+    nav {
+
+      background: #ffffff;
+
+      padding: 10px 20px;
+      
+      text-align: center;
+
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+
+    }
+
+    
+    nav a {
+
+      margin: 0 15px;
+
+      text-decoration: none;
+
+      color: #333;
+
+      font-weight: bold;
+
+    }
+
+    section {
+
+      max-width: 800px;
+
+      margin: 40px auto;
+
+      padding: 0 20px;
+
+    }
+
+    
+    section h2 {
+
+      color: #444;
+
+      border-bottom: 2px solid #eee;
+
+      padding-bottom: 5px;
+
+    }
+
+
+    footer {
+      
+      text-align: center;
+
+      padding: 20px;
+
+      color: #777;
+
+      font-size: 0.9em;
+
+      border-top: 1px solid #eee;
+      
+      margin-top: 40px;
+
+    }
+
+
+    @media (max-width: 600px) {
+
+      header h1 {
+
+        font-size: 2rem;
+
+      }
+
+
+      nav a {
+
+        display: block;
+
+        margin: 10px 0;
+
+      }
+
+    }
+  </style>
+
+
+
+</head>
+
+
+
+<body>
+
+
+
+  <header>
+
+    <h2>an informal blog from Kevin</h2>
+
+  </header>
+
+
+
+
+
+
+
+  <nav>
+
+    <a href="#about">About</a>
+
+    <a href="#posts-math">Technical Posts</a>
+
+    <a href="#posts-other">Nontechnical Posts</a>
+
+  </nav>
+
+
+
+
+  <div class=« about-section »>
+
+
+ <section id="#about">
+    <h2>About this blog...</h2>
+    <div class="about-content">
+
+    <div class="about-text">
+
+    <p>I keep some informal and/or non-technical thoughts here. Outside of work, it's hard to write well-organized and researched essays, but these days it is equally hard to not think about the changes to my life brought about by AI and math. This is my motivation for writing.</p>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <section id="posts-math">
+
+
+
+    <h2>Technical (Math) Posts</h2>
+
+
+
+    <ul>
+
+    <li><a href="sp26_overdamped_langevin_conv_slides.pdf" target="_blank">Delocalization of Bias in Overdamped Langevin Monte Carlo (talk at student probability seminar, not my original work)</li>   
+
+    <li>under construction
+
+
+
+    </ul>
+
+
+
+  </section>
+
+
+
+  
+
+    <section id="posts-other">
+
+
+
+    <h2>Nontechnical (Random) Posts</h2>
+
+
+
+    <li>under construction
+
+  </section>
+
+
+
+
+  <footer>
+
+
+
+    &copy; 2025 Kaiwen Zhang. Built with 💻 and ☕.
+
+
+
+  </footer>
+
+
+
+</body>
+
+
+
+</html>
